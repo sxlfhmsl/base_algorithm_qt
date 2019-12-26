@@ -26,10 +26,14 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    sort.cpp \
+    bubblesort.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    sort.h \
+    bubblesort.h
 
 FORMS += \
         mainwindow.ui
