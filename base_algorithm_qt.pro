@@ -27,13 +27,13 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    sort.cpp \
-    bubblesort.cpp
+    sort/sort.cpp \
+    sort/bubblesort.cpp
 
 HEADERS += \
         mainwindow.h \
-    sort.h \
-    bubblesort.h
+    sort/sort.h \
+    sort/bubblesort.h
 
 FORMS += \
         mainwindow.ui

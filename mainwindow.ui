@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="2" column="2">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="lineEditCount"/>
     </item>
     <item row="3" column="1">
      <widget class="QLabel" name="labelResult">
@@ -80,6 +80,20 @@
     <item row="1" column="1" colspan="2">
      <widget class="QWidget" name="widget" native="true">
       <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="3">
+        <widget class="QCheckBox" name="checkBoxBubbleSort">
+         <property name="text">
+          <string>冒泡</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QCheckBox" name="checkBoxComplex">
+         <property name="text">
+          <string>复杂结果</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="0">
         <spacer name="horizontalSpacer">
          <property name="orientation">
@@ -93,7 +107,7 @@
          </property>
         </spacer>
        </item>
-       <item row="0" column="4">
+       <item row="0" column="5">
         <spacer name="horizontalSpacer_2">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -106,17 +120,13 @@
          </property>
         </spacer>
        </item>
-       <item row="0" column="2">
-        <widget class="QCheckBox" name="checkBoxBubbleSort">
-         <property name="text">
-          <string>冒泡</string>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="1">
-        <widget class="QCheckBox" name="checkBoxComplex">
+        <widget class="QCheckBox" name="checkBoxThread">
          <property name="text">
-          <string>复杂结果</string>
+          <string>多线程</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
