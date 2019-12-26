@@ -35,8 +35,6 @@ void MainWindow::on_pushButtonRun_clicked()
 void MainWindow::slot_sort_success(QString name, QList<int> target)
 {
     qint64 time_diff = QDateTime::currentDateTime().toMSecsSinceEpoch() - this->datetime.toMSecsSinceEpoch();
-    this->sort->deleteLater();
-    this->sort = nullptr;
     name = name + "-----" + QString::number(time_diff);
     if (ui->checkBoxComplex->isChecked())
     {
@@ -46,6 +44,8 @@ void MainWindow::slot_sort_success(QString name, QList<int> target)
         }
     }
     ui->textEditResult->setText(name);
+    this->sort->deleteLater();
+    this->sort = nullptr;
 }
 
 QList<int> MainWindow::gen_list(int count)
