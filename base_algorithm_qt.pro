@@ -28,12 +28,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     sort/sort.cpp \
-    sort/bubblesort.cpp
+    sort/bubblesort.cpp \
+    sort/mergesort.cpp
 
 HEADERS += \
         mainwindow.h \
     sort/sort.h \
-    sort/bubblesort.h
+    sort/bubblesort.h \
+    sort/mergesort.h
 
 FORMS += \
         mainwindow.ui
